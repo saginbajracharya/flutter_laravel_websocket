@@ -1,0 +1,6 @@
+{
+  "appTitle": "flutter_laravel_websocket",
+  "@appTitle": {
+    "description": "The title of the application"
+  }
+}
