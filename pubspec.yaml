@@ -21,6 +21,7 @@ dev_dependencies:
 
   flutter_lints: ^2.0.0
   laravel_flutter_pusher: ^0.0.4
+  # pusher_client_fixed: ^0.0.2
 
 flutter:
   uses-material-design: true

@@ -45,7 +45,7 @@ class _SampleItemListViewState extends State<SampleItemListView> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Socket Test'),
+        title: const Text('Socket Connection'),
         actions: [
           IconButton(
             icon: const Icon(Icons.settings),
@@ -116,7 +116,10 @@ class _SampleItemListViewState extends State<SampleItemListView> {
             //Send Message Button
             TextButton(
               onPressed: () async{
-                // pusher.trigger('my-event', {'message': 'Hello from Flutter!'});
+                pusher.unsubscribe('home');
+                pusher.subscribe('home').trigger("AppEventsNewEvent").then((value){
+                  log("message result ====> $value");
+                });
               },
               child: const Text('SendMessage TO CHANNEL HOME'),
             ),
