@@ -20,8 +20,7 @@ dev_dependencies:
     sdk: flutter
 
   flutter_lints: ^2.0.0
-  socket_io_client: ^1.0.1
-  # pusher_client: ^2.0.0
+  laravel_flutter_pusher: ^0.0.4
 
 flutter:
   uses-material-design: true

@@ -88,6 +88,22 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "0.6.7"
+  json_annotation:
+    dependency: transitive
+    description:
+      name: json_annotation
+      sha256: b10a7b2ff83d83c777edba3c6a0f97045ddadd56c944e1a23a3fdf43a1bf4467
+      url: "https://pub.dev"
+    source: hosted
+    version: "4.8.1"
+  laravel_flutter_pusher:
+    dependency: "direct dev"
+    description:
+      name: laravel_flutter_pusher
+      sha256: a83edb50e3c8b11f1e8661daef8d53fa48fe5cc7dbbff2bcc959115dbef78df6
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.0.4"
   lints:
     dependency: transitive
     description:
@@ -96,14 +112,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.1.1"
-  logging:
-    dependency: transitive
-    description:
-      name: logging
-      sha256: "623a88c9594aa774443aa3eb2d41807a48486b5613e67599fb4c41c0ad47c340"
-      url: "https://pub.dev"
-    source: hosted
-    version: "1.2.0"
   matcher:
     dependency: transitive
     description:
@@ -141,22 +149,6 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.99"
-  socket_io_client:
-    dependency: "direct dev"
-    description:
-      name: socket_io_client
-      sha256: "64bd271703db3682d4195dd813c555413d21a49bbaef7c3ed38932fd2a209a10"
-      url: "https://pub.dev"
-    source: hosted
-    version: "1.0.2"
-  socket_io_common:
-    dependency: transitive
-    description:
-      name: socket_io_common
-      sha256: "469c7e6bb0c8d571a5158c1352112654f03aedc2f0a246533e1cbdb41efa4937"
-      url: "https://pub.dev"
-    source: hosted
-    version: "1.0.1"
   source_span:
     dependency: transitive
     description:
@@ -215,3 +207,4 @@ packages:
     version: "2.1.4"
 sdks:
   dart: ">=3.0.0 <4.0.0"
+  flutter: ">=1.20.0"
