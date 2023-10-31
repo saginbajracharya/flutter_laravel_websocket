@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:flutter_laravel_websocket/src/homepage.dart';
+import 'package:flutter_laravel_websocket/src/socket_client.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 
 import 'sample_feature/sample_item_details_view.dart';
@@ -68,8 +70,12 @@ class MyApp extends StatelessWidget {
                   case SampleItemDetailsView.routeName:
                     return const SampleItemDetailsView();
                   case SampleItemListView.routeName:
-                  default:
                     return const SampleItemListView();
+                  case SocketClient.routeName:
+                    return const SocketClient();
+                  case HomePage.routeName:
+                  default:
+                    return const HomePage();
                 }
               },
             );
